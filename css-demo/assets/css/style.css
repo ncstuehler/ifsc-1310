@@ -1,3 +1,14 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /*  
 #9E6942 Dark Brown
 #FFC69E Light Peach
@@ -9,4 +20,69 @@
 
 body{
     font-family: 'Aclonica', sans-serif;
+    margin:0;
+}
+
+header.primary{
+    background:#7AE1EB;
+    text-align:center;
+    color:#9E6942;
+    text-shadow:2px 2px #000000;
+    /*long form*/
+    padding-top:20px;
+    padding-right:40px;
+    padding-bottom:20px;
+    padding-left:40px;
+    /*or T,R,B,L */
+    padding:20px 40px 20px 40px;
+    /* or T/B  R/L */
+    padding:20px 40px;
+}
+
+header.primary h1{
+  font-size:2.9rem;
+  margin:20px 0;
+}
+
+header.primary h1 a{
+  color:#9E6942;
+  text-decoration:none;
+}
+
+header.primary h2{
+  font-size:1.8rem;
+  /*T L/R B*/
+  margin: 20px auto 40px;
+}
+
+header.primary nav{
+  width:80vw;
+  margin:20px auto;
+  max-width:900px;
+}
+
+header.primary nav ul{
+  padding:0;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+header.primary nav ul li{
+  list-style-type:none;
+}
+
+header.primary nav ul li a{
+  color:#9E6942;
+  text-decoration:none;
+  background-color:#000000;
+  background-color:rgba(0,0,0,.4);
+  padding:8px 16px;
+  border-radius:20px;
+  transition:.5s;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active{
+  background-color:rgba(0,0,0,.8);
 }
