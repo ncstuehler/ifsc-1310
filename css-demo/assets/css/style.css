@@ -9,6 +9,16 @@ html {
   box-sizing: inherit;
 }
 
+/*--------------Utility Classes---------------*/
+
+.container{
+  width:70vw;
+  margin:40px auto;
+  max-width:960px;
+}
+
+
+
 /*  
 #9E6942 Dark Brown
 #FFC69E Light Peach
@@ -85,4 +95,49 @@ header.primary nav ul li a{
 header.primary nav a:hover,
 header.primary nav a:active{
   background-color:rgba(0,0,0,.8);
+}
+
+#intro{
+  border-bottom: 2px dotted #33959E;
+  padding-bottom:1.2rem;
+}
+
+#intro h2{
+  color:#33959E;
+}
+
+#intro p{
+  line-height:1.2;
+}
+
+
+
+
+
+
+
+
+/*Media Query Example*/
+
+@media screen and (max-width:685px) {
+  
+  header.primary nav ul{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  margin:0 auto;
+  width:60vw;
+  }
+  
+  header.primary nav a{
+    display:block;
+  }
+  
+  header.primary nav li{
+    margin-bottom:10px;
+  }
+  
+  
+  
+  
 }
