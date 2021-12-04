@@ -143,20 +143,23 @@ section#content h2 {
     font-size: 1.7em;
     color: #1A2E40;
     text-align:center;
+    font-weight: 900;
 }
 
 details {
     border: 1px solid #E3EAF1;
     border-radius: 4px;
     padding: .5em .5em 0;
-    background-color: #1A2E40;
+    background: #395873;
     color: #E3EAF1;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 summary {
     font-weight: bold;
     margin: -.5em -.5em 0;
     padding: .5em;
+    background: #1A2E40;
 }
 
 details[open] {
@@ -166,6 +169,34 @@ details[open] {
 details[open] summary {
     border-bottom: 1px solid #E3EAF1;
     margin-bottom: .5em;
+}
+
+summary:hover{
+    background: #395873;
+}
+
+section#content th {
+  background: #1A2E40;
+  color: #E3EAF1;
+  padding: 10px;
+}
+
+section#content td {
+  border: 1px solid #1A2E40;
+  padding: 5px;
+  text-align: center;
+}
+
+section#content tr:nth-child(even) {
+  background-color: #84878C;
+  color: #E3EAF1;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+section#content tr:hover {
+  background: #395873;
+  color: #E3EAF1;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 section#articles {
