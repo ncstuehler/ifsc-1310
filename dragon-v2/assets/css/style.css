@@ -1,0 +1,317 @@
+/* Colors
+#08090D near black
+#E3EAF1 light silver
+#84878C dark silver
+#1A2E40 dark blue
+#395873 light blue
+*/
+
+/*---Box Sizing---*/
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*--Utility--*/
+
+.container {
+    width: 80vw;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.img-right {
+    float: right;
+    margin: 10px 0 10px 20px;
+    border: 1px solid #08090D;
+    padding: 5px;
+}
+
+.img-left {
+    float: left;
+    margin: 10px 20px 10px 0;
+    border: 1px solid #08090D;
+    padding: 5px;
+}
+    
+.img-center {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #08090D;
+    padding: 5px;
+}
+
+/*--Responsive Images--*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Trispace', sans-serif;
+    margin: 0;
+}
+
+header.primary {
+  background-color: #121E2A;
+  text-align: center;
+  color: #E3EAF1;
+  
+  padding: 6em 2em;
+  position: relative;
+}
+
+header.primary::before {
+    content: "";
+    background-image: url("../img/dragon-flying.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+header.primary h1 {
+    font-size: 3rem;
+    margin: 20px;
+    position: relative;
+}
+
+header.primary h1 a {
+    color: #E3EAF1;
+    background-image: url("https://assets.codepen.io/7248/logo-2.png");
+    display: block;
+    width: 450px;
+    height: 70px;
+    margin: 0 auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header.primary h2{
+    font-size: 2em;
+    margin: 20px auto 40px;
+    position: relative;
+}
+
+header.primary nav ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+header.primary nav li {
+    list-style-type: none;
+    padding: 0;
+    width: 20%;
+}
+
+header.primary nav a:link,
+header.primary nav a:visited {
+  color: #E3EAF1;
+  text-decoration: none;
+  background-color: #000000;
+  background-color: rgba(85, 140, 195, 0.4);
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.6s;
+  display: block;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active {
+  background-color: rgba(153, 196, 239, 0.6);
+}
+
+section#content {
+    padding: 3.5em 0;
+}
+
+section#content h2 {
+    font-size: 1.7em;
+    color: #1A2E40;
+    text-align:center;
+    font-weight: 900;
+}
+
+details {
+    border: 1px solid #E3EAF1;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+    background: #395873;
+    color: #E3EAF1;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+    background: #1A2E40;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #E3EAF1;
+    margin-bottom: .5em;
+}
+
+summary:hover{
+    background: #395873;
+}
+
+section#content th {
+  background: #1A2E40;
+  color: #E3EAF1;
+  padding: 10px;
+}
+
+section#content td {
+  border: 1px solid #1A2E40;
+  padding: 5px;
+  text-align: center;
+}
+
+section#content tr:nth-child(even) {
+  background-color: #84878C;
+  color: #E3EAF1;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+section#content tr:hover {
+  background: #395873;
+  color: #E3EAF1;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+section#articles {
+    background: #1A2E40;
+}
+
+section#articles .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #08090D;
+    padding: 0 0 3em 0;
+}
+
+section#articles h2,
+#content h2 {
+  flex: 0 0 100%;
+  color: #395873;
+  text-align: center;
+  font-size: 2em;
+}
+
+section#articles h2 {
+    color: #E3EAF1;
+}
+
+#articles article.post {
+  width: 30%;
+  padding: 10px;
+  transition: 0.6s;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background: #84878C;
+  color: #E3EAF1;
+}
+
+#articles article.post h2 {
+  font-size: 1.7em;
+}
+
+#articles article figcaption {
+  font-size: 0.8em;
+  color: #E3EAF1;
+  text-transform: uppercase;
+}
+
+#articles .post a:link,
+#articles .post a:visited {
+  color: #E3EAF1;
+}
+
+#articles .post figure {
+  margin: 0;
+}
+
+#articles .post img {
+  border-radius: 10px;
+}
+
+#articles ul {
+  padding: 0 20px;
+}
+
+#articles li {
+  margin-bottom: 20px;
+}
+
+.gallery {
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+aside[role="complementary"] {
+  background-color: #1A2E40;
+  color: #E3EAF1;
+  padding: 2.5em;
+  text-align: center;
+}
+
+aside article a:link,
+aside article a:visited {
+  color: #E3EAF1;
+  display: block;
+  margin-top: 1.2em;
+  letter-spacing: 1.2px;
+}
+
+aside article a:hover,
+aside article a:active {
+  text-decoration: none;
+}
+
+aside article footer {
+  display: none;
+}
+
+footer#colophon {
+  background-color: #1A2E40;
+}
+
+#colophon h6 {
+  padding: 20px;
+  margin: 0;
+  color: #E3EAF1;
+  text-align: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+#colophon h6 a:link,
+#colophon h6 a:visited {
+  color: #E3EAF1;
+}
+
